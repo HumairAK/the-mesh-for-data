@@ -79,6 +79,8 @@ kind: ClusterRole
 metadata:
   creationTimestamp: null
   name: m4d-manager-role
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 rules:
 - apiGroups:
   - ""
